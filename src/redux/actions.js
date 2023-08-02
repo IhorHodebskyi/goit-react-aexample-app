@@ -1,9 +1,9 @@
 import { nanoid } from 'nanoid';
 
-export const addTasks = text => {
+export const addTask = text => {
   return {
-    type: 'task/addTask',
-    payLoad: {
+    type: 'tasks/addTask',
+    payload: {
       id: nanoid(),
       completed: false,
       text,
