@@ -10,7 +10,6 @@ export const TaskForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.target;
-    console.log(form.elements.text.value);
     dispatch(addTask(form.elements.text.value));
     form.reset();
   };
